@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="Chapter 12"/>
+	<classpathentry kind="src" path="Chapter 7"/>
+	<classpathentry kind="src" path="Chapter 8"/>
+	<classpathentry kind="src" path="Chapter 9"/>
+	<classpathentry kind="src" path="Chapter12_RMISum"/>
+	<classpathentry kind="src" path="Chapter 11"/>
+	<classpathentry kind="src" path="Chapter 2"/>
+	<classpathentry kind="src" path="Chapter 3"/>
+	<classpathentry kind="src" path="Chapter 10"/>
+	<classpathentry kind="src" path="Chapter 5 program"/>
+	<classpathentry kind="src" path="Chapter 6 Progarm"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

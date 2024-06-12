@@ -1,11 +1,11 @@
-package chapter2;
+package Chapter2;
 
 import java.net.InetAddress; 
 public class GetHostNameTest {
 	
 	public static void main(String[] args){
 	try{
-	InetAddress address=InetAddress.getByName("www.google.com");
+	InetAddress address=InetAddress.getByName("::1");
 	
 
 	System.out.println("Host Name: "+address.getHostName());

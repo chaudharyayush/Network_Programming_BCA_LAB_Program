@@ -1,0 +1,4 @@
+8.8.8.8 GET /index.html
+15.197.172.60 POST /submit-form
+127.0.0.1 GET /about.html
+205.160.186.76 unknown [11/Mar/2023:22:53:76 -0500] “GET /bgs/greenbg.gif HTTP 1.0” 200 50

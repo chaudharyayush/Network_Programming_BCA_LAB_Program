@@ -1,10 +1,10 @@
-package chapter2;
+package Chapter2;
 
 public class SpamCheck {
 
     public static void main(String[] args) {
-        String message = "This is a spam message! Click here to claim your prize!";
-        //String message = "This is not a spam message! Hello";
+        //String message = "This is a spam message! Click here to claim your prize!";
+        String message = "This is not a spam message! Hello";
 
         boolean isSpam = checkSpam(message);
         System.out.println("Is spam? \n" + isSpam);

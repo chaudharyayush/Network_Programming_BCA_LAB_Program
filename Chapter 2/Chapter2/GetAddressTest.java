@@ -1,4 +1,4 @@
-package chapter2;
+package Chapter2;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
