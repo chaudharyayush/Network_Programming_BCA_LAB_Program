@@ -5,7 +5,7 @@ import java.io.*;
 
 public class ProxySystemProperty {
     public static void main(String[] args) {
-        // Set  HTTP proxy host and port system property
+        // Set the  HTTP proxy host and port system property
         // live proxy list: https://www.proxynova.com/proxy-server-list/
         System.setProperty("http.proxyHost", "13.234.24.116");
         System.setProperty("http.proxyPort", "1080");
