@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my Sample HTML Page</h1>
+    <p>This is a simple HTML page with some content.</p>
+    <p>It demonstrates basic HTML structure and styling.</p>
+    <p>Feel free to use this HTML for testing purposes.</p>
+</body>
+</html>

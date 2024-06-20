@@ -9,7 +9,7 @@ public class ResponseCodeMsg {
 
 		try {
 			// Open the URLConnection for reading
-			URL u = new URL("https://example.com/dfdfdf/");
+			URL u = new URL("https://example.com");
 			HttpURLConnection uc = (HttpURLConnection) u.openConnection();
 			int code = uc.getResponseCode();
 			String response = uc.getResponseMessage();

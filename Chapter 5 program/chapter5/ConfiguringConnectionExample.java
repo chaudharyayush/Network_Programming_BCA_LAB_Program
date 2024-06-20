@@ -1,41 +1,37 @@
 package chapter5;
 
-
-import java.io.*;
-import java.net.*;
+import java.io.IOException;
+import java.net.URLConnection;
+import java.net.URL;
 
 public class ConfiguringConnectionExample {
-    public static void main(String[] args) {
-        HttpURLConnection connection = null;
-        try {
-            URL url = new URL("http://www.example.com");
-            connection = (HttpURLConnection) url.openConnection();
+	public static void main(String[] args) {
+		try {
+			// Create a URL object
+			URL url = new URL("http://www.example.com");
 
-            // Configure the connection
-            connection.setDoInput(true); // Allow input (reading from the resource)
-            connection.setDoOutput(false); // No output (not sending data)
-            connection.setUseCaches(true); // Use caches if available
-            connection.setAllowUserInteraction(false); // Disable user interaction
-            connection.setIfModifiedSince(0); // Set to 0 to ensure the latest version is fetched
+			// Open a connection to the URL
+			URLConnection connection = url.openConnection();
 
-            // Establish the connection
-            connection.connect();
+			System.out.println("URL: " + connection.getURL());
+			System.out.println("Allow User Interaction: " + connection.getAllowUserInteraction());
+			System.out.println("Do Output: " + connection.getDoOutput());
+			System.out.println("Use Cache: " + connection.getUseCaches());
 
-            // Use the connection to read data (input stream)
-            InputStream inputStream = connection.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-            reader.close();
+			// Configure the URLConnection
+			connection.setAllowUserInteraction(true);
+			connection.setDoOutput(true);
+			connection.setUseCaches(false);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (connection != null) {
-                connection.disconnect(); // Disconnect the connection
-            }
-        }
-    }
+			// Get and print the configuration of the URLConnection
+			System.out.println("Allow User Interaction: " + connection.getAllowUserInteraction());
+			System.out.println("Do Output: " + connection.getDoOutput());
+			System.out.println("Use Cache: " + connection.getUseCaches());
+
+			connection.connect();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }

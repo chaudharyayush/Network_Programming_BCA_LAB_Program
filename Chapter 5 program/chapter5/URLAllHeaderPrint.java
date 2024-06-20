@@ -4,7 +4,7 @@ package chapter5;
 import java.io.*;
 import java.net.*;
 
-public class URLHeaderPrint {
+public class URLAllHeaderPrint {
 	public static void main(String[] args) {
 		String url= "http://www.oreilly.com";
 		try {
