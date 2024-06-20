@@ -13,10 +13,12 @@ public class SetVsAddRequestProperty {
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
 			// setRequestProperty
+			//explain- The setRequestProperty() method sets the HTTP request header specified by "User-Agent" to "Mozilla/5.0". However, since setRequestProperty() overwrites any existing header value for the same key, the second call replaces "Mozilla/5.0" with "Chrome/90.0"
 			connection.setRequestProperty("User-Agent", "Mozilla/5.0");
 			connection.setRequestProperty("User-Agent", "Chrome/90.0");
 
 			// addRequestProperty
+			//explain- The addRequestProperty() method adds a new header value to the existing headers without removing any previous values for the same key. In this case, "Accept-Language" initially has "en-US" added, followed by "NE"
 			connection.addRequestProperty("Accept-Language", "en-US");
 			connection.addRequestProperty("Accept-Language", "NE");
 
