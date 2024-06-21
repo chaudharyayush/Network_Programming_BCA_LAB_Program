@@ -22,6 +22,7 @@ public class HeaderLastModify {
 
 			// Get the last modified date in milliseconds since epoch
 			long lastModified = http.getLastModified();
+			//System.out.println(lastModified);
 
 			// Check if the last modified date is valid
 			if (lastModified == 0) {
