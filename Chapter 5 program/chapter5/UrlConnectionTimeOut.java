@@ -12,7 +12,7 @@ public class UrlConnectionTimeOut {
 			URL u = new URL("http://www.oreilly.com/jkjh");
 			URLConnection uc = u.openConnection();
 			//uc.setConnectTimeout(0);// A timeout value of 0 indicates an infinite timeout, meaning the connection will wait indefinitely for the connection to establish.
-			uc.setConnectTimeout(20);//time in millisecond
+			uc.setConnectTimeout(200);//time in millisecond
 			uc.connect();
 			System.out.println("connected");
 		} catch (IOException ex) {

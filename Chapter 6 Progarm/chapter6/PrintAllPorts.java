@@ -5,7 +5,7 @@ import java.io.*;
 
 public class PrintAllPorts {
     public static void main(String [] args){
-        for (int i =1000; i<=2000; i++){
+        for (int i =50700; i<=50774; i++){
             try {
                 ServerSocket s = new ServerSocket(i);
                 System.out.println("Port "+i+" is available.");
