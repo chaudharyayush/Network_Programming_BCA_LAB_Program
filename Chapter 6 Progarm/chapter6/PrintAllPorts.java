@@ -6,7 +6,7 @@ import java.io.*;
 public class PrintAllPorts {
     public static void main(String [] args){
     	//use this command to know the active connection netstat -a -n -o
-        for (int i =51000; i<=51040; i++){
+        for (int i =5200; i<=5228; i++){
             try {
                 ServerSocket s = new ServerSocket(i);
                 System.out.println("Port "+i+" is available.");

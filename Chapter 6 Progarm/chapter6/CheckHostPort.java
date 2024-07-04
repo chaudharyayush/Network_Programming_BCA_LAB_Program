@@ -8,7 +8,7 @@ public class CheckHostPort {
 	protected static String localhost = "127.0.0.1";
 
 	public static void main(String[] args) {
-		for (int i = 1; i <= 1024; i++) {
+		for (int i = 50000; i <= 50500; i++) {
 			try {
 				Socket s = new Socket(localhost, i);
 				System.out.println("Port " + i + " is associated with " + localhost);

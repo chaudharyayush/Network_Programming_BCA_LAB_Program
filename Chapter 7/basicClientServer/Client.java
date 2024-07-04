@@ -10,22 +10,22 @@ public class Client {
         System.out.println("connected...");
         
         // read something to send to the server
-        // InputStreamReader read = new InputStreamReader(System.in);
         Scanner scanner = new Scanner(System.in);
-        // BufferedReader stdin = new BufferedReader(read);
         System.out.println("Write message to server: ");
-        // int msgForServer = myObj.nextInt();
         String msgForServer = scanner.nextLine();
-        // String msgForServer = stdin.readLine();
 
         // send message to server
-        PrintWriter out = new PrintWriter(ss.getOutputStream(), true);
+        PrintWriter out = new PrintWriter(ss.getOutputStream(), true); //true (autoFlush parameter)
+        //ss.getOutputStream(): This method returns an OutputStream that is connected to the output side of the socket. It allows you to send raw bytes to the client.
+        //new PrintWriter(ss.getOutputStream(), true): This constructs a PrintWriter object that wraps the OutputStream. The PrintWriter converts characters into bytes using a specified character encoding and writes them to the output stream.
         out.println(msgForServer);
+        //out is PrintWriter object
+        //println is method of the PrintWriter class
+        //The println method writes the specified string followed by a newline character (\n). It’s similar to the print method but automatically appends a newline at the end
         System.out.println("you: " + msgForServer);
 
         // read response from the server
-        InputStream in = ss.getInputStream();
-        BufferedReader input = new BufferedReader(new InputStreamReader(in));
+        BufferedReader input = new BufferedReader(new InputStreamReader(ss.getInputStream()));
         String response = input.readLine();
         System.out.println("server: " + response);
 
