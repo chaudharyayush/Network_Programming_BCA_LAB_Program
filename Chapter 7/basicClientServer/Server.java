@@ -3,8 +3,11 @@ import java.io.*;
 import java.net.*;
 
 public class Server{
+	
     public static void main(String[] args) throws IOException {
         ServerSocket ss = new ServerSocket(13001);
+       
+        
         System.out.println("Waiting for connections....");
         Socket cs = ss.accept();
         System.out.println("connected...");

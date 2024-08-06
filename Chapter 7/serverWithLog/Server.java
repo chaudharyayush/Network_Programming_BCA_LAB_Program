@@ -12,6 +12,7 @@ public class Server {
 		ServerSocket ss = null;
 		try {
 			ss = new ServerSocket(9000);
+			//ss.setSoTimeout(1);
 		} catch (IOException e) {
 			errorLog.log(Level.SEVERE, "could not start the server");
 		}
