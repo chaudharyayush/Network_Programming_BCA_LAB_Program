@@ -6,7 +6,7 @@ import java.net.InetAddress;
 import java.net.MulticastSocket;
 
 public class MulticastJoiner2 {
-	@SuppressWarnings("deprecation")
+	@SuppressWarnings("deprecation") //@SuppressWarnings("deprecation") annotation in Java is used to tell the compiler to ignore warnings related to the use of deprecated code.
 	public static void main(String[] args) {
 		try {
 			// Define the multicast group address and port
